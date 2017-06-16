@@ -1,0 +1,11 @@
+{
+  "name": "hexo-douban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "233"
+  ],
+  "author": "mythsman",
+  "license": "ISC"
+}
