@@ -45,7 +45,7 @@ menu:
 We just test the plugin in the following three themes.
 
 ### hexo-theme-landscape
-![landscape](screenshot/landcape.png)
+![landscape](screenshot/landscape.png)
 
 ### hexo-theme-next
 ![next](screenshot/next.png)
