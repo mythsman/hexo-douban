@@ -53,8 +53,9 @@ We just test the plugin in the following three themes.
 ### hexo-theme-yilia
 ![yilia](screenshot/yilia.png)
 
-## Demo of my own homepage
+## Online demo
 
 [books](https://blog.mythsman.com/books?from=hexo-douban)
+
 [movies](https://blog.mythsman.com/movies?from=hexo-douban)
 
