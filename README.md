@@ -42,15 +42,16 @@ menu:
 ```
 
 ## Screenshot
+We just test the plugin in the following three themes.
 
 ### hexo-theme-landscape
-[landscape](screenshot/landcape.png)
+![landscape](screenshot/landcape.png)
 
 ### hexo-theme-next
-[next](screenshot/next.png)
+![next](screenshot/next.png)
 
 ### hexo-theme-yilia
-[yilia](screenshot/yilia.png)
+![yilia](screenshot/yilia.png)
 
 ## Demo of my own homepage
 
