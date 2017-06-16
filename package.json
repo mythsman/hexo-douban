@@ -1,11 +1,29 @@
 {
   "name": "hexo-douban",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generate douban pages of books and movies for Hexo.",
   "main": "index.js",
+  "dependencies": {
+    "urllib-sync": "^1.0.1",
+    "ejs":"^2.5.6",
+    "xpath":"^0.0.24",
+    "xmldom":"^0.1.27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mythsman/hexo-douban.git"
+  },
   "keywords": [
-    "233"
+    "generator",
+    "plugin",
+    "books",
+    "movies",
+    "hexo",
+    "douban"
   ],
   "author": "mythsman",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/mythsman/hexo-douban/issues"
+  },
+  "homepage": "https://github.com/mythsman/hexo-douban/issues"
 }
