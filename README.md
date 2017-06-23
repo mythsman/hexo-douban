@@ -2,7 +2,7 @@
 
 douban plugin for [Hexo].
 
-![NPM version](https://badge.fury.io/js/hexo-douban.svg)
+![Build Status](https://api.travis-ci.org/mythsman/hexo-douban.svg?branch=master)![NPM version](https://badge.fury.io/js/hexo-douban.svg)
 
 ## Installation
 
