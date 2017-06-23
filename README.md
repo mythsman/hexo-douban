@@ -1,7 +1,8 @@
 # hexo-douban
 
-
 douban plugin for [Hexo].
+
+![NPM version](https://badge.fury.io/js/hexo-douban.svg)
 
 ## Installation
 
