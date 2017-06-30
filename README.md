@@ -2,7 +2,7 @@
 
 douban plugin for [Hexo].
 
-![NPM version](https://badge.fury.io/js/hexo-douban.svg)
+![NPM version](https://badge.fury.io/js/hexo-douban.svg)[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fmythsman%2Fhexo-douban.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fmythsman%2Fhexo-douban?ref=badge_shield)
 
 ## Installation
 
