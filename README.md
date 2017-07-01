@@ -39,7 +39,7 @@ douban:
 If all the above is done , you can now check `http://yourblog/books` and `http://yourblog/movies` , and you will see the result.
 
 ## Menu
-If all the above is done , you can add them to the `_config.yml` like this:
+If all the above is done , you can add them to the `_config.yml` of your theme like this:
 ```yaml
 menu:
   Home: /
