@@ -23,6 +23,7 @@ describe('Hexo douban', function() {
   });
 
   it('books enabled', function() {
+    this.timeout(15000);
     hexo.config.douban = {
       user: 'mythsman',
       book: {
@@ -34,6 +35,7 @@ describe('Hexo douban', function() {
   });
 
   it('movies enabled', function() {
+    this.timeout(15000);
     hexo.config.douban = {
       user: 'mythsman',
       movie: {
