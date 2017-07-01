@@ -66,3 +66,5 @@ We just test the plugin in the following three themes.
 
 [movies](https://blog.mythsman.com/movies?from=hexo-douban)
 
+## Lisense
+MIT
