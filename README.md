@@ -30,7 +30,7 @@ douban:
     quote: 'This is my movie quote'
 ```
 
-- **user**: Your douban Id . You can see it from the url of your douban homepage.
+- **user**: Your douban Id . You can see it from the url of your douban homepage.For example, you should click on your "个人主页" and you can see your id from the url "https://www.douban.com/people/xxxxxx/".
 - **title**: Your title in that page.
 - **quote**: Your quote in that page.
 
