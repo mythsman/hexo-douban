@@ -9,6 +9,7 @@ douban plugin for [Hexo](https://hexo.io).
 [![npm](https://img.shields.io/npm/dt/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![Package quality](http://packagequality.com/shield/hexo-douban.svg)](http://packagequality.com/#?package=hexo-douban)
 
+
 ## Installation
 
 ``` bash
