@@ -49,7 +49,7 @@ menu:
 ```
 
 ## Screenshot
-We just test the plugin in the following three themes.
+We just test the plugin in the following themes.
 
 ### hexo-theme-landscape
 ![landscape](screenshot/landscape.png)
@@ -59,6 +59,9 @@ We just test the plugin in the following three themes.
 
 ### hexo-theme-yilia
 ![yilia](screenshot/yilia.png)
+
+### hexo-theme-indigo
+![indigo](screenshot/indigo.png)
 
 ## Online demo
 
