@@ -29,11 +29,13 @@ douban:
   movie:
     title: 'This is my movie title'
     quote: 'This is my movie quote'
+  timeout: 5000 #optional
 ```
 
 - **user**: Your douban Id . You can see it from the url of your douban homepage.For example, you should click on your "个人主页" and you can see your id from the url "https://www.douban.com/people/xxxxxx/".
 - **title**: Your title in that page.
 - **quote**: Your quote in that page.
+- **timeout**: The timeout value when crawling data from douban site. If you fail to generate your pages and see the warning like 'ETIMEOUT' , you can set this value a little bigger. The default value is 5000 ms.
 
 ## Show
 If all the above is done , you can now check `http://yourblog/books` and `http://yourblog/movies` , and you will see the result.
