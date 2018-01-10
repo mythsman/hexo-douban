@@ -40,6 +40,12 @@ douban:
 - **quote**: Your quote in that page.
 - **timeout**: The timeout value when crawling data from douban site. If you fail to generate your pages and see the warning like 'ETIMEOUT' , you can set this value a little bigger. The default value is 10000 ms.
 
+## Upgrade
+Emm... sometimes I will fix some bugs for the ugly plugin , so remember to keep your plugin up-to-date:
+```
+$ npm update hexo-douban --save
+```
+
 ## Show
 If all the above is done , you can now check `http://yourblog/books` and `http://yourblog/movies` , and you will see the result.
 
