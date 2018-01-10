@@ -1,7 +1,7 @@
 {
   "name": "hexo-douban",
-  "version": "0.2.3",
-  "description": "Generate douban pages of books and movies for Hexo.",
+  "version": "0.2.4",
+  "description": "Generate douban pages of books , movies and games for Hexo.",
   "main": "index",
   "scripts": {
     "eslint": "eslint .",
