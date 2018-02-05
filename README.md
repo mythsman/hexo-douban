@@ -75,6 +75,9 @@ We just test the plugin in the following themes, but actually it can fit more th
 ### hexo-theme-indigo
 ![indigo](screenshot/indigo.png)
 
+### hexo-theme-aath
+![aath](screenshot/aath.png)
+
 ## Online demo
 
 [books](https://blog.mythsman.com/books?from=hexo-douban)
