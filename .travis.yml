@@ -6,14 +6,13 @@ cache:
   apt: true
   directories:
     - node_modules
-
+git
 node_js:
   - "6"
   - "node"
 
 script:
   - npm run eslint
-  - npm run jscs
   - npm run test-cov
 
 after_script:
