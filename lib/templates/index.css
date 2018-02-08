@@ -48,6 +48,21 @@
     font-size: 12px;
 }
 
+.hexo-douban-pagination {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hexo-douban-button {
+    padding: 5px;
+}
+
+.hexo-douban-button:hover {
+    background: #657b83;
+    color: #fff;
+}
+
 .hexo-douban-hide {
     display: none;
 }
