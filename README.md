@@ -1,6 +1,6 @@
 # hexo-douban
 
-douban plugin for [Hexo](https://hexo.io).
+一个在 [Hexo](https://hexo.io) 页面中嵌入豆瓣个人主页的小插件.
 
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://nodejs.org/en/)
 [![Build Status](https://travis-ci.org/mythsman/hexo-douban.svg?branch=master)](https://travis-ci.org/mythsman/hexo-douban)
@@ -10,15 +10,15 @@ douban plugin for [Hexo](https://hexo.io).
 [![Package quality](http://packagequality.com/shield/hexo-douban.svg)](http://packagequality.com/#?package=hexo-douban)
 
 
-## Installation
+## 安装
 
 ``` bash
 $ npm install hexo-douban --save
 ```
 
-## Options
+## 设置
 
-You should copy the following text to the bottom of  `_config.yml` of your blog.
+将下面的配置写入站点的配置文件 `_config.yml` 里(不是主题的配置文件).
 
 ``` yaml
 douban:
@@ -35,22 +35,26 @@ douban:
   timeout: 10000 #optional
 ```
 
-- **user**: Your douban Id . You can see it from the url of your douban homepage.For example, you should click on your "个人主页" and you can see your id from the url "https://www.douban.com/people/xxxxxx/".
-- **title**: Your title in that page.
-- **quote**: Your quote in that page.
-- **timeout**: The timeout value when crawling data from douban site. If you fail to generate your pages and see the warning like 'ETIMEOUT' , you can set this value a little bigger. The default value is 10000 ms.
+- **user**: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 "个人主页" ，就可以在这个URL里看到你的ID了: "https://www.douban.com/people/xxxxxx/".
+- **title**: 该页面的标题.
+- **quote**: 写在页面开头的一段话,支持html语法.
+- **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
 
-## Upgrade
-Emm... sometimes I will fix some bugs for the ugly plugin , so remember to keep your plugin up-to-date:
+如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
+
+
+## 升级
+我会不定期更新一些功能或者修改一些Bug，所以如果想使用最新的特性，可以用下面的方法来更新:
+
 ```
 $ npm update hexo-douban --save
 ```
 
-## Show
-If all the above is done , you can now check `http://yourblog/books` and `http://yourblog/movies` , and you will see the result.
+## 显示
+如果上面的配置都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果.
 
-## Menu
-If all the above is done , you can add them to the `_config.yml` of your theme like this:
+## 菜单
+如果上面的显示没有问题就可以在主题的配置文件 `_config.yml` 里添加如下配置来为这些页面添加菜单链接.
 ```yaml
 menu:
   Home: /
@@ -60,8 +64,8 @@ menu:
   Games: /games   #This is your games page
 ```
 
-## Screenshot
-We just test the plugin in the following themes, but actually it can fit more themes.
+## 截图
+我们在下面这些常见的主题里测试了插件的使用效果:
 
 ### hexo-theme-landscape
 ![landscape](screenshot/landscape.png)
@@ -78,13 +82,28 @@ We just test the plugin in the following themes, but actually it can fit more th
 ### hexo-theme-aath
 ![aath](screenshot/aath.png)
 
-## Online demo
+## 在线Demo
 
 [books](https://blog.mythsman.com/books?from=hexo-douban)
 
 [movies](https://blog.mythsman.com/movies?from=hexo-douban)
 
 [games](https://blog.mythsman.com/games?from=hexo-douban)
+
+## 更新记录
+0.2.8
+- 为标签添加国际化设置，支持zh\_Hans,zh\_tw,en等
+- 考虑到某些剧比较长，存在"在看"这个状态，因此为movie页添加"在看"标签
+
+0.2.7:
+- 修复页面显示不正常的bug 
+
+0.2.6:
+- 添加分页效果
+- 重构模板代码
+
+0.2.5:
+- 修复无法适配某些主题的bug
 
 ## Lisense
 MIT
