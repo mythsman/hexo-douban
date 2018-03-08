@@ -8,7 +8,8 @@
 [![NPM version](https://badge.fury.io/js/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![npm](https://img.shields.io/npm/dt/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f894cc232ae54ba8893af54a1cf587f5)](https://www.codacy.com/app/mythsman/hexo-douban?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mythsman/hexo-douban&amp;utm_campaign=Badge_Grade)
-![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
+
 
 ## 安装
 
