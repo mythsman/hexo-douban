@@ -65,6 +65,24 @@ menu:
   Games: /games   #This is your games page
 ```
 
+## 更新记录
+0.2.9
+- 紧急修复了由于豆瓣对前端代码做了简单重构导致的插件爬取电影信息异常的bug
+
+0.2.8
+- 为标签添加国际化设置，支持zh-Hans,zh-tw,en等
+- 考虑到某些剧比较长，存在"在看"这个状态，因此为movie页添加"在看"标签
+
+0.2.7:
+- 修复页面显示不正常的bug
+
+0.2.6:
+- 添加分页效果
+- 重构模板代码
+
+0.2.5:
+- 修复无法适配某些主题的bug
+
 ## 截图
 我们在下面这些常见的主题里测试了插件的使用效果:
 
@@ -90,21 +108,6 @@ menu:
 [movies](https://blog.mythsman.com/movies?from=hexo-douban)
 
 [games](https://blog.mythsman.com/games?from=hexo-douban)
-
-## 更新记录
-0.2.8
-- 为标签添加国际化设置，支持zh-Hans,zh-tw,en等
-- 考虑到某些剧比较长，存在"在看"这个状态，因此为movie页添加"在看"标签
-
-0.2.7:
-- 修复页面显示不正常的bug 
-
-0.2.6:
-- 添加分页效果
-- 重构模板代码
-
-0.2.5:
-- 修复无法适配某些主题的bug
 
 ## Lisense
 MIT
