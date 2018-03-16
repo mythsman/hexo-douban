@@ -109,5 +109,8 @@ menu:
 
 [games](https://blog.mythsman.com/games?from=hexo-douban)
 
+## FeedBack
+如果大家在使用的过程中有什么问题或者意见，欢迎随时提issue。
+
 ## Lisense
 MIT
