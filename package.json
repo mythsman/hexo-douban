@@ -1,6 +1,6 @@
 {
   "name": "hexo-douban",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "Generate douban pages of books , movies and games for Hexo.",
   "main": "index",
   "scripts": {
