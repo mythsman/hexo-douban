@@ -7,10 +7,10 @@ hexo.extend.generator.register('books', require('./lib/books-generator'));
 hexo.extend.generator.register('movies', require('./lib/movies-generator'));
 hexo.extend.generator.register('games', require('./lib/games-generator'));
 
-hexo.extend.generator.register('douban-gif', function(locals) {
+hexo.extend.generator.register('douban-gif', function (locals) {
   return {
     path: '/assets/douban-loading.gif',
-    data: function() {
+    data: function () {
       return fs.createReadStream(path.join(__dirname, '/lib/templates/douban-loading.gif'));
     }
   };
