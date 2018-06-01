@@ -18,13 +18,14 @@
 $ npm install hexo-douban --save
 ```
 
-## 设置
+## 配置
 
 将下面的配置写入站点的配置文件 `_config.yml` 里(不是主题的配置文件).
 
 ``` yaml
 douban:
   user: mythsman
+  builtin: false
   book:
     title: 'This is my book title'
     quote: 'This is my book quote'
@@ -34,26 +35,47 @@ douban:
   game:
     title: 'This is my game title'
     quote: 'This is my game quote'
-  timeout: 10000 #optional
+  timeout: 10000 
 ```
 
 - **user**: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 "个人主页" ，这时候地址栏的URL大概是这样："https://www.douban.com/people/xxxxxx/" ，其中的"xxxxxx"就是你的个人ID了。
+- **builtin**: 是否将生成页面的功能嵌入`hexo s`和`hexo g`中，默认是`false`,另一可选项为`true`(1.x.x版本新增配置项)。
 - **title**: 该页面的标题.
 - **quote**: 写在页面开头的一段话,支持html语法.
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 
+## 使用
+### 1.x.x版本
+在0.x.x版本中，文章的更新和豆瓣页面的爬取操作是绑定在一起的，无法支持单独更新文章或者单独爬取文章。
+在1.x.x版本中，使用`hexo douban`命令即可生成指定页面，如果不加参数，那么默认参数为`-bgm`。
+```
+$ hexo douban -h
+Usage: hexo douban
+
+Description:
+Generate pages from douban
+
+Options:
+  -b, --books   Generate douban books only
+  -g, --games   Generate douban games only
+  -m, --movies  Generate douban movies only
+```
+
+如果配置了`builtin`参数为`true`，那么除了可以使用`hexo douban`命令之外，`hexo g`或`hexo s`也内嵌了生成页面的功能。
+
+### 0.x.x版本
+直接使用命令`hexo g`即在生成静态页面前爬取豆瓣数据，如果使用`hexo s`则会监听文件变动，每有一次变动就会重新爬取数据。
 
 ## 升级
 我会不定期更新一些功能或者修改一些Bug，所以如果想使用最新的特性，可以用下面的方法来更新:
 
-```
-$ npm update hexo-douban --save
-```
+1. 修改package.json内hexo-douban的版本号至最新
+2. 重新安装最新版本`npm install hexo-douban --save`
 
 ## 显示
-如果上面的配置都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果.
+如果上面的配置和操作都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果.
 
 ## 菜单
 如果上面的显示没有问题就可以在主题的配置文件 `_config.yml` 里添加如下配置来为这些页面添加菜单链接.
@@ -67,6 +89,10 @@ menu:
 ```
 
 ## 更新记录
+1.0.1
+- 优化了命令操作，提供`hexo douban`命令供单独页面的生成
+- 将页面生成功能与hexo默认命令解耦，提供更大的操作自由度
+
 0.2.16
 - 修复了IE/Edge中读书页面图片无法显示的问题
 
