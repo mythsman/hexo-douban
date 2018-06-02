@@ -2,6 +2,10 @@
 'use strict';
 var fs = require('hexo-fs');
 var path = require('path');
+var log = require('hexo-log')({
+  debug: false,
+  silent: false
+});
 
 hexo.extend.generator.register('books', function (locals) {
   if (!this.config.douban || !this.config.douban.builtin) {
@@ -76,8 +80,9 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
     });
     names.forEach(name => {
       var id = name + "/index.html";
-      self.route.get(id)._data().then(function (contents) {
+      self.route.get(id) && self.route.get(id)._data().then(function (contents) {
         fs.writeFile(path.join(publicDir, id), contents);
+        log.info("Generated: %s", id);
       });
     });
   });
