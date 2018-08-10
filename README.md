@@ -79,6 +79,8 @@ Options:
 1. 修改package.json内hexo-douban的版本号至最新
 2. 重新安装最新版本`npm install hexo-douban --save`
 
+或者使用`npm install hexo-douban --update --save`直接更新。
+
 ## 显示
 如果上面的配置和操作都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果.
 
