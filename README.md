@@ -94,6 +94,9 @@ menu:
 ```
 
 ## 更新记录
+1.0.4
+- 修复了文件流读取错误导致loading图加载失败的bug
+
 1.0.3
 - 放弃对IE/Edge的支持，取消了0.2.16版本的修改，保证了referrer的纯净性，从而提供对[不蒜子](http://busuanzi.ibruce.info)的支持
 

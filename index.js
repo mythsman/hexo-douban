@@ -75,8 +75,14 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
 
   //Generate files
   self.load().then(function () {
-    self.route.get(doubanLoadingPath)._data().then(function (contents) {
-      fs.writeFile(path.join(publicDir, doubanLoadingPath), contents);
+    self.route.get(doubanLoadingPath)._data().then(function (stream) {
+      var data = '';
+      stream.on('data', function(chunk){
+        data += chunk;
+      })
+      stream.on('end',function(){
+        fs.writeFile(path.join(publicDir, doubanLoadingPath), data);
+      })
     });
     names.forEach(name => {
       var id = name + "/index.html";
