@@ -75,14 +75,14 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
 
   //Generate files
   self.load().then(function () {
+    if(!fs.existsSync(publicDir)){
+      fs.mkdirSync(publicDir);
+    }
+    if(!fs.existsSync(path.join(publicDir,'assets'))){
+      fs.mkdirSync(path.join(publicDir,'assets'));
+    }
     self.route.get(doubanLoadingPath)._data().then(function (stream) {
-      var data = '';
-      stream.on('data', function(chunk){
-        data += chunk;
-      })
-      stream.on('end',function(){
-        fs.writeFile(path.join(publicDir, doubanLoadingPath), data);
-      })
+      stream.pipe(fs.createWriteStream(path.join(publicDir, doubanLoadingPath)));
     });
     names.forEach(name => {
       var id = name + "/index.html";
