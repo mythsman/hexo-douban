@@ -53,7 +53,7 @@ douban:
 
 在1.x.x版本中，使用`hexo douban`命令即可生成指定页面，如果不加参数，那么默认参数为`-bgm`。
 
-需要注意的是，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`的前缀都是`hexo d`。
+**需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`的前缀都是`hexo d`。
 
 ```
 $ hexo douban -h
