@@ -11,21 +11,21 @@ hexo.extend.generator.register('books', function (locals) {
   if (!this.config.douban || !this.config.douban.builtin) {
     return;
   }
-  require('./lib/books-generator').call(this, locals);
+  return require('./lib/books-generator').call(this, locals);
 });
 
 hexo.extend.generator.register('movies', function (locals) {
   if (!this.config.douban || !this.config.douban.builtin) {
     return;
   }
-  require('./lib/movies-generator').call(this, locals);
+  return require('./lib/movies-generator').call(this, locals);
 });
 
 hexo.extend.generator.register('games', function (locals) {
   if (!this.config.douban || !this.config.douban.builtin) {
     return;
   }
-  require('./lib/games-generator').call(this, locals);
+  return require('./lib/games-generator').call(this, locals);
 });
 
 var options = {
