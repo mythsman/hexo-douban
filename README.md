@@ -190,13 +190,6 @@ menu:
 ### hexo-theme-aath
 ![aath](screenshot/aath.png)
 
-## 在线Demo
-
-[books](https://blog.mythsman.com/books?from=hexo-douban)
-
-[movies](https://blog.mythsman.com/movies?from=hexo-douban)
-
-[games](https://blog.mythsman.com/games?from=hexo-douban)
 
 ## FeedBack
 如果大家在使用的过程中有什么问题或者意见，欢迎随时提issue。
