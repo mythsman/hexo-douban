@@ -96,6 +96,21 @@ menu:
 ```
 
 ## 更新记录
+1.1.3
+- 修复了读书页面rating信息没抓到的问题
+
+1.1.2
+- 修复在某些版本下全局变量找不到的问题
+
+1.1.1
+- 修复了读书页面评论丢失的问题。
+
+1.1.0 
+- 修复了由于豆瓣修改api导致读书页面无法抓取的问题
+
+1.0.8
+- 语言标识 zh-tw 修改为 zh-TW
+
 1.0.7
 - 修复游戏生成页面无法分页的bug
 
@@ -175,13 +190,6 @@ menu:
 ### hexo-theme-aath
 ![aath](screenshot/aath.png)
 
-## 在线Demo
-
-[books](https://blog.mythsman.com/books?from=hexo-douban)
-
-[movies](https://blog.mythsman.com/movies?from=hexo-douban)
-
-[games](https://blog.mythsman.com/games?from=hexo-douban)
 
 ## FeedBack
 如果大家在使用的过程中有什么问题或者意见，欢迎随时提issue。
