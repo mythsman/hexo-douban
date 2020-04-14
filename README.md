@@ -29,12 +29,15 @@ douban:
   book:
     title: 'This is my book title'
     quote: 'This is my book quote'
+    comments: false
   movie:
     title: 'This is my movie title'
     quote: 'This is my movie quote'
+    comments: false
   game:
     title: 'This is my game title'
     quote: 'This is my game quote'
+    comments: false
   timeout: 10000 
 ```
 
@@ -42,6 +45,7 @@ douban:
 - **builtin**: 是否将生成页面的功能嵌入`hexo s`和`hexo g`中，默认是`false`,另一可选项为`true`(1.x.x版本新增配置项)。
 - **title**: 该页面的标题.
 - **quote**: 写在页面开头的一段话,支持html语法.
+- **comments**: 是否显示评论框
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
