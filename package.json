@@ -39,7 +39,7 @@
     "eslint-config-hexo": "^1.0.2",
     "hexo": "^3.2.0",
     "istanbul": "^0.4.1",
-    "mocha": "^2.0.1"
+    "mocha": "^10.1.0"
   },
   "bugs": {
     "url": "https://github.com/mythsman/hexo-douban/issues"
