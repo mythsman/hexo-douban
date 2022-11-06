@@ -10,9 +10,7 @@
     "hexo-i18n": "1.0.0",
     "hexo-log": "4.0.1",
     "path": "^0.12.7",
-    "urllib-sync": "1.1.4",
-    "xmldom": "^0.1.27",
-    "xpath": "^0.0.24"
+    "urllib-sync": "1.1.4"
   },
   "repository": {
     "type": "git",
