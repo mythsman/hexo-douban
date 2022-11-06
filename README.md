@@ -25,7 +25,6 @@ $ npm install hexo-douban --save
 ``` yaml
 douban:
   user: mythsman
-  builtin: false
   book:
     title: 'This is my book title'
     quote: 'This is my book quote'
@@ -39,7 +38,6 @@ douban:
 ```
 
 - **user**: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 "个人主页" ，这时候地址栏的URL大概是这样："https://www.douban.com/people/xxxxxx/" ，其中的"xxxxxx"就是你的个人ID了。
-- **builtin**: 是否将生成页面的功能嵌入`hexo s`和`hexo g`中，默认是`false`,另一可选项为`true`(1.x.x版本新增配置项)。
 - **title**: 该页面的标题.
 - **quote**: 写在页面开头的一段话,支持html语法.
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
@@ -68,7 +66,6 @@ Options:
   -m, --movies  Generate douban movies only
 ```
 
-如果配置了`builtin`参数为`true`，那么除了可以使用`hexo douban`命令之外，`hexo g`或`hexo s`也内嵌了生成页面的功能。
 
 ### 0.x.x版本
 直接使用命令`hexo g`即在生成静态页面前爬取豆瓣数据，如果使用`hexo s`则会监听文件变动，每有一次变动就会重新爬取数据。
