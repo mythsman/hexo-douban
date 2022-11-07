@@ -6,15 +6,15 @@
 
 .hexo-douban-tab {
     padding: 5px;
+    text-decoration: none !important;
 }
 
 .hexo-douban-active {
     background: #657b83;
-    color: #fff;
+    color: #fff !important;
 }
 
 .hexo-douban-item {
-    padding-bottom: 10px;
     position: relative;
     clear: both;
     min-height: 170px;
@@ -56,11 +56,13 @@
 
 .hexo-douban-button {
     padding: 5px;
+    text-decoration: none !important;
 }
 
 .hexo-douban-button:hover {
     background: #657b83;
-    color: #fff;
+    color: #fff !important;
+    opacity: 1;
 }
 
 .hexo-douban-hide {
