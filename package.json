@@ -1,6 +1,6 @@
 {
   "name": "hexo-douban",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Generate douban pages of books , movies and games for Hexo.",
   "main": "index",
   "scripts": {},
@@ -8,7 +8,7 @@
     "ejs": "3.1.7",
     "hexo-fs": "4.1.1",
     "hexo-i18n": "1.0.0",
-    "hexo-log": "4.0.1",
+    "hexo-log": "3.2.0",
     "path": "^0.12.7",
     "urllib-sync": "1.1.4"
   },
@@ -28,8 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-config-hexo": "^1.0.2",
-    "hexo": "^3.2.0"
+    "eslint-config-hexo": "^1.0.2"
   },
   "bugs": {
     "url": "https://github.com/mythsman/hexo-douban/issues"

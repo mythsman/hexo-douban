@@ -2,10 +2,7 @@
 'use strict';
 const fs = require('hexo-fs');
 const path = require('path');
-const log = require('hexo-log')({
-    debug: false,
-    silent: false
-});
+const log = require('./lib/util').log
 
 const options = {
     options: [
