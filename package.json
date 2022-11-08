@@ -1,6 +1,6 @@
 {
   "name": "hexo-douban",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Generate douban pages of books , movies and games for Hexo.",
   "main": "index",
   "scripts": {},
@@ -10,7 +10,8 @@
     "hexo-i18n": "1.0.0",
     "hexo-log": "3.2.0",
     "path": "^0.12.7",
-    "urllib": "^3.5.0"
+    "urllib": "^3.5.0",
+    "diagnostics_channel": "^1.1.0"
   },
   "repository": {
     "type": "git",
