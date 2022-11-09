@@ -3,7 +3,7 @@
 一个在 [Hexo](https://hexo.io) 页面中嵌入豆瓣个人主页的小插件.
 
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://nodejs.org/en/)
-[![NPM version](https://badge.fury.io/js/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
+[![package version](https://badge.fury.io/js/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![npm](https://img.shields.io/npm/dt/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
 
