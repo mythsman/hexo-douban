@@ -111,11 +111,12 @@ menu:
 ## 接口
 如果有非hexo环境的部署需求，或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务：
 
-**用户录入/更新**
+```
+# 用户录入/更新
 
 https://mouban.mythsman.com/guest/check_user?id={your_douban_id}
 
-**查询用户的读书评论**
+# 查询用户的读书评论
 
 https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=wish
 
@@ -123,7 +124,7 @@ https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=do
 
 https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=collect
 
-**查询用户的电影评论**
+# 查询用户的电影评论
 
 https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=wish
 
@@ -131,13 +132,15 @@ https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=do
 
 https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=collect
 
-**查询用户的游戏评论**
+# 查询用户的游戏评论
 
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=wish
 
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=do
 
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=collect
+
+```
 
 ## 免责声明
 本项目仅供学习交流使用，不得用于任何商业用途。
