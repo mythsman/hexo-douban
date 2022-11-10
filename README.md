@@ -118,19 +118,25 @@ https://mouban.mythsman.com/guest/check_user?id={your_douban_id}
 **查询用户的读书评论**
 
 https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=wish
+
 https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=do
+
 https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=collect
 
 **查询用户的电影评论**
 
 https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=wish
+
 https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=do
+
 https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=collect
 
 **查询用户的游戏评论**
 
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=wish
+
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=do
+
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=collect
 
 ## 免责声明
