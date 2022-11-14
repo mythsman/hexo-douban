@@ -29,17 +29,6 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         names.push("books", "movies", "games");
     }
 
-    const doubanLoadingPath = '/assets/douban-loading.gif';
-    //Load static files
-    hexo.extend.generator.register('douban-gif', function (locals) {
-        return {
-            path: doubanLoadingPath,
-            data: function () {
-                return fs.createReadStream(path.join(__dirname, '/lib/templates/douban-loading.gif'));
-            }
-        };
-    });
-
     //Register route
     names.forEach(name => {
         hexo.extend.generator.register(name, require('./lib/' + name + '-generator'));
@@ -56,9 +45,6 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         if (!fs.existsSync(path.join(publicDir, 'assets'))) {
             fs.mkdirSync(path.join(publicDir, 'assets'));
         }
-        self.route.get(doubanLoadingPath)._data().then(function (stream) {
-            stream.pipe(fs.createWriteStream(path.join(publicDir, doubanLoadingPath)));
-        });
         names.forEach(name => {
             const id = name + "/index.html";
             self.route.get(id) && self.route.get(id)._data().then(function (contents) {
