@@ -10,7 +10,7 @@
 [![NPM](https://nodei.co/npm/hexo-douban.png)](https://nodei.co/npm/hexo-douban/)
 
 ## 原理
-hexo-douban 目前升级到了 2.x 版本，将原先由插件客户端自行获取数据的逻辑抽到了一个隐藏的服务端中进行，以统一解决数据获取、以及风控对抗升级的问题。
+hexo-douban 目前升级到了 2.x 版本，将原先由插件客户端自行获取数据的逻辑抽到了一个隐藏的服务端中进行，以统一解决数据获取、数据缓存、风控对抗等问题，提高页面生成的成功率和效率。
 
 ## 安装
 
@@ -107,6 +107,39 @@ menu:
 
 ### hexo-theme-aath
 ![aath](screenshot/aath.png)
+
+## 接口
+如果有非hexo环境的部署需求，或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务（将 {your_douban_id} 改为你的豆瓣数字ID）：
+```
+# 用户录入/更新
+
+https://mouban.mythsman.com/guest/check_user?id={your_douban_id}
+
+# 查询用户的读书评论
+
+https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=wish
+
+https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=do
+
+https://mouban.mythsman.com/guest/user_book?id={your_douban_id}&action=collect
+
+# 查询用户的电影评论
+
+https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=wish
+
+https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=do
+
+https://mouban.mythsman.com/guest/user_movie?id={your_douban_id}&action=collect
+
+# 查询用户的游戏评论
+
+https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=wish
+
+https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=do
+
+https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=collect
+
+```
 
 ## 免责声明
 本项目仅供学习交流使用，不得用于任何商业用途。
