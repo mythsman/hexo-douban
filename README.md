@@ -89,9 +89,9 @@ menu:
   Movies: /movies   #This is your movies page
   Games: /games   #This is your games page
 ```
-## 问题
+## 主题兼容
 
-对于使用 hexo-theme-butterfly 等使用 `pjax` 进行渲染的主题，需要在 `_config.yml` 中将豆瓣页进行排除，否则 js 会失效导致页面异常(@hyh981006):
+对于使用 hexo-theme-butterfly 等使用 `pjax` 进行渲染的主题，需要在 `_config.yml` 中将豆瓣页进行排除，否则 js 会失效导致页面异常 [@ISSUE 108](https://github.com/mythsman/hexo-douban/issues/108) :
 ```
 pjax:
   enable: true
