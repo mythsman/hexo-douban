@@ -89,6 +89,17 @@ menu:
   Movies: /movies   #This is your movies page
   Games: /games   #This is your games page
 ```
+## 问题
+
+对于使用 hexo-theme-butterfly 等使用 `pjax` 进行渲染的主题，需要在 `_config.yml` 中将豆瓣页进行排除，否则 js 会失效导致页面异常(@hyh981006):
+```
+pjax:
+  enable: true
+  exclude:
+    - /movies/
+    - /books/
+    - /games/
+```
 
 ## 截图
 我们在下面这些常见的主题里测试了插件的使用效果:
