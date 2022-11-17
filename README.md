@@ -26,18 +26,22 @@ $ npm install hexo-douban --save
 douban:
   id: 162448367
   book:
+    path: books/index.html
     title: 'This is my book title'
     quote: 'This is my book quote'
   movie:
+    path: movies/index.html
     title: 'This is my movie title'
     quote: 'This is my movie quote'
   game:
+    path: games/index.html
     title: 'This is my game title'
     quote: 'This is my game quote'
   timeout: 10000 
 ```
 
 - **user**: 你的豆瓣ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
+- **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持html语法。
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
@@ -78,7 +82,7 @@ Options:
 或者使用`npm install hexo-douban --update --save`直接更新。
 
 ## 显示
-如果上面的配置和操作都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果.
+如果上面的配置和操作都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果。
 
 ## 菜单
 如果上面的显示没有问题就可以在主题的配置文件 `_config.yml` 里添加如下配置来为这些页面添加菜单链接.
