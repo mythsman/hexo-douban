@@ -57,7 +57,7 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         names.forEach(name => {
             const publicDir = self.public_dir;
             const id = self.config.douban[name.substr(0, name.length - 1)].path
-            fs.mkdirSync(path.join(publicDir, id.replaceAll("index.html", "")), {recursive: true})
+            fs.mkdirSync(path.join(publicDir, id.replace("index.html", "")), {recursive: true})
 
             self.route.get(id) && self.route.get(id)._data().then(function (contents) {
                 fs.writeFile(path.join(publicDir, id), contents);
