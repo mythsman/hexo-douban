@@ -125,7 +125,7 @@ pjax:
 ![aath](screenshot/aath.png)
 
 ## 接口
-如果有非hexo环境的部署需求，或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务（将 {your_douban_id} 改为你的豆瓣数字ID）：
+如果有非hexo环境的部署需求（例如我自己就是用的 Ghost ，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务（将 {your_douban_id} 改为你的豆瓣数字ID）：
 ```
 # 用户录入/更新
 
