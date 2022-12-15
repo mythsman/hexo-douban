@@ -8,7 +8,8 @@ const options = {
     options: [
         {name: '-b, --books', desc: 'Generate douban books only'},
         {name: '-m, --movies', desc: 'Generate douban movies only'},
-        {name: '-g, --games', desc: 'Generate douban games only'}
+        {name: '-g, --games', desc: 'Generate douban games only'},
+        {name: '-s, --songs', desc: 'Generate douban songs only'}
     ]
 };
 
@@ -24,6 +25,10 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
     if ((args.g || args.games) && this.config.douban.game) {
         names.push("games");
     }
+    if ((args.s || args.songs) && this.config.douban.song) {
+        names.push("songs");
+    }
+
 
     if (names.length === 0) {
         if (this.config.douban.book) {
@@ -34,6 +39,9 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         }
         if (this.config.douban.game) {
             names.push("games");
+        }
+        if (this.config.douban.song) {
+            names.push("songs");
         }
     }
     const self = this;
@@ -48,7 +56,6 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
 
         hexo.extend.generator.register(name, require('./lib/' + name + '-generator'));
 
-        log.info("page_path :" + page_path)
     })
 
 

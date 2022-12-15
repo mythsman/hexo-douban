@@ -37,6 +37,10 @@ douban:
     path: games/index.html
     title: 'This is my game title'
     quote: 'This is my game quote'
+  song:
+    path: songs/index.html
+    title: 'This is my song title'
+    quote: 'This is my song quote'
   timeout: 10000 
 ```
 
@@ -60,8 +64,9 @@ Options:
   -b, --books   Generate douban books only
   -g, --games   Generate douban games only
   -m, --movies  Generate douban movies only
+  -s, --songs   Generate douban songs only
 ```
-如果不加参数，那么默认参数为`-bgm`。
+如果不加参数，那么默认参数为`-bgms`。
 
 **需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`的前缀都是`hexo d`。
 
@@ -93,6 +98,7 @@ menu:
   Books: /books     #This is your books page
   Movies: /movies   #This is your movies page
   Games: /games   #This is your games page
+  Songs: /songs   #This is your songs page
 ```
 ## 主题兼容
 
@@ -104,6 +110,7 @@ pjax:
     - /movies/
     - /books/
     - /games/
+    - /songs/
 ```
 
 ## 截图
@@ -159,6 +166,13 @@ https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=do
 
 https://mouban.mythsman.com/guest/user_game?id={your_douban_id}&action=collect
 
+# 查询用户的音乐评论
+
+https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=wish
+
+https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=do
+
+https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 ```
 
 ## 免责声明
