@@ -29,18 +29,22 @@ douban:
     path: books/index.html
     title: 'This is my book title'
     quote: 'This is my book quote'
+    option:
   movie:
     path: movies/index.html
     title: 'This is my movie title'
     quote: 'This is my movie quote'
+    option:
   game:
     path: games/index.html
     title: 'This is my game title'
     quote: 'This is my game quote'
+    option:
   song:
     path: songs/index.html
     title: 'This is my song title'
     quote: 'This is my song quote'
+    option:
   timeout: 10000 
 ```
 
@@ -48,6 +52,7 @@ douban:
 - **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持html语法。
+- **option**: 该页面额外的 Front-matter 配置。
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
