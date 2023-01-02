@@ -25,6 +25,7 @@ $ npm install hexo-douban --save
 ``` yaml
 douban:
   id: 162448367
+  builtin: false
   book:
     path: books/index.html
     title: 'This is my book title'
@@ -49,6 +50,7 @@ douban:
 ```
 
 - **id**: 你的豆瓣ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
+- **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。当你的豆瓣条目较多时，也建议关闭。
 - **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持html语法。
@@ -71,16 +73,15 @@ Options:
   -m, --movies  Generate douban movies only
   -s, --songs   Generate douban songs only
 ```
-如果不加参数，那么默认参数为`-bgms`。
+如果不加参数，那么默认参数为`-bgms`。当然，前提是配置文件中均有这些类型的配置。
 
 **需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`的前缀都是`hexo d`。
 
-第一次使用 hexo douban 时，后台会异步进行数据获取，一般需要等待一段时间才能查到数据（大约五分钟）。
+第一次使用 hexo douban 时，后台会异步进行数据获取，一般需要等待一段时间（后台访问你的标记页面）才能查到数据。顺利情况下，平均一个页面会花10s。
 
-由于数据是分阶段获取，当第一次成功生成页面时其实只获取了图书、电影或游戏的简略信息。后台会慢慢更新详细信息，如果有需要可以再多等等一段时间。时间视你的数据数量而定，平均一个资源会花6s。例如如果你有 100 个想读、100个已读、100个在读的图书，则大约需要等待 300*6/60= 30 分钟。当然，如果你喜欢的条目别人已经提前录入过，那获取这个条目时间就可以节约掉。
+例如如果你有 150 个想读、150个已读、150个在读的图书，每页15条，则共需要翻30页。那么大约需要等待 30*10/60=5 分钟。如果长时间没有更新，请及时提 issue 反馈。
 
 后续如果你的豆瓣数据更新了，hexo douban 同样也会自动进行更新（同样需要等待一段时间才会查到更新数据），不过出于安全考虑，一个用户id**每小时至多只会同步一次**。
-
 
 
 ## 升级
