@@ -87,7 +87,7 @@ Options:
 ## 升级
 我会不定期更新一些功能或者修改一些Bug，所以如果想使用最新的特性，可以用下面的方法来更新:
 
-1. 修改package.json内hexo-douban的版本号至最新
+1. 修改 package.json 内 hexo-douban 的版本号至最新
 2. 重新安装最新版本`npm install hexo-douban --save`
 
 或者使用`npm install hexo-douban --update --save`直接更新。
@@ -174,7 +174,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 数据来源于互联网公开内容，没有获取任何私有和有权限的信息（个人信息等），由此引发的任何法律纠纷与本人无关。
 
 ## 反馈
-系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。
+系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。如果你觉得这个插件很好用，欢迎右上角点下小✨～
 
 ## Lisense
 MIT
