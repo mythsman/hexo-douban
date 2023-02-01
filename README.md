@@ -10,6 +10,7 @@
 [![NPM](https://nodei.co/npm/hexo-douban.png)](https://nodei.co/npm/hexo-douban/)
 
 ## 原理
+
 hexo-douban 目前升级到了 2.x 版本，将原先由插件客户端自行获取数据的逻辑抽到了一个隐藏的服务端中进行，以统一解决数据获取、数据缓存、风控对抗等问题，提高页面生成的成功率和效率。
 
 ## 安装
@@ -26,6 +27,7 @@ $ npm install hexo-douban --save
 douban:
   id: 162448367
   builtin: false
+  item_per_page: 10
   book:
     path: books/index.html
     title: 'This is my book title'
@@ -51,6 +53,7 @@ douban:
 
 - **id**: 你的豆瓣ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
 - **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。当你的豆瓣条目较多时，也建议关闭。
+- **item_per_page**: 每页展示的条目数，默认 10 。
 - **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持html语法。
@@ -60,6 +63,7 @@ douban:
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 
 ## 使用
+
 ```
 $ hexo douban -h
 Usage: hexo douban
@@ -73,9 +77,11 @@ Options:
   -m, --movies  Generate douban movies only
   -s, --songs   Generate douban songs only
 ```
+
 如果不加参数，那么默认参数为`-bgms`。当然，前提是配置文件中均有这些类型的配置。
 
-**需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`的前缀都是`hexo d`。
+**需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`
+的前缀都是`hexo d`。
 
 第一次使用 hexo douban 时，后台会异步进行数据获取，一般需要等待一段时间（后台访问你的标记页面）才能查到数据。顺利情况下，平均一个页面会花10s。
 
@@ -83,11 +89,10 @@ Options:
 
 后续如果你的豆瓣数据更新了，hexo douban 同样也会自动进行更新（同样需要等待一段时间才会查到更新数据），不过出于安全考虑，一个用户id**每小时至多只会同步一次**。
 
-
 由于数据获取的策略原因，目前数据只支持新增，不支持删除。也就是说，即使你在豆瓣中删除了某个“想看”，这里同步到的数据中仍然包含这个条目。
 
-
 ## 升级
+
 我会不定期更新一些功能或者修改一些Bug，所以如果想使用最新的特性，可以用下面的方法来更新:
 
 1. 修改 package.json 内 hexo-douban 的版本号至最新
@@ -96,10 +101,13 @@ Options:
 或者使用`npm install hexo-douban --update --save`直接更新。
 
 ## 显示
+
 如果上面的配置和操作都没问题，就可以在生成站点之后打开 `//yourblog/books` 和 `//yourblog/movies`, `//yourblog/games`, 来查看结果。
 
 ## 菜单
+
 如果上面的显示没有问题就可以在主题的配置文件 `_config.yml` 里添加如下配置来为这些页面添加菜单链接.
+
 ```yaml
 menu:
   Home: /
@@ -109,27 +117,35 @@ menu:
   Games: /games   #This is your games page
   Songs: /songs   #This is your songs page
 ```
+
 ## 截图
+
 我们在下面这些常见的主题里测试了插件的使用效果:
 
 ### hexo-theme-landscape
+
 ![landscape](screenshot/landscape.png)
 
 ### hexo-theme-next
+
 ![next](screenshot/next.png)
 
 ### hexo-theme-yilia
+
 ![yilia](screenshot/yilia.png)
 
 ### hexo-theme-indigo
+
 ![indigo](screenshot/indigo.png)
 
 ### hexo-theme-aath
+
 ![aath](screenshot/aath.png)
 
 ## 接口
-如果有非hexo环境的部署需求（例如我自己就是用的 Ghost ，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [mouban](https://github.com/mythsman/mouban)：
 
+如果有非hexo环境的部署需求（例如我自己就是用的 Ghost
+，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [mouban](https://github.com/mythsman/mouban)：
 
 ```
 # 将 {your_douban_id} 改为你的豆瓣数字ID
@@ -172,12 +188,15 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 ```
 
 ## 免责声明
+
 本项目仅供学习交流使用，不得用于任何商业用途。
 
 数据来源于互联网公开内容，没有获取任何私有和有权限的信息（个人信息等），由此引发的任何法律纠纷与本人无关。
 
 ## 反馈
+
 系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。如果你觉得这个插件很好用，欢迎右上角点下小✨～
 
 ## Lisense
+
 MIT
