@@ -64,6 +64,7 @@ douban:
 
 ## 使用
 
+**展示帮助文档**
 ```
 $ hexo douban -h
 Usage: hexo douban
@@ -76,6 +77,32 @@ Options:
   -g, --games   Generate douban games only
   -m, --movies  Generate douban movies only
   -s, --songs   Generate douban songs only
+```
+
+**主动生成豆瓣页面**
+```
+$ hexo douban
+INFO  Start processing
+INFO  7 movies(wish) fetched
+INFO  0 movies(do) fetched
+INFO  11 games(wish) fetched
+INFO  0 books(wish) fetched
+INFO  0 songs(wish) fetched
+INFO  3 games(do) fetched
+INFO  0 books(do) fetched
+INFO  0 songs(do) fetched
+INFO  0 books(collect) fetched
+INFO  books have been loaded in 1172 ms
+INFO  147 movies(collect) fetched
+INFO  movies have been loaded in 1189 ms
+INFO  0 songs(collect) fetched
+INFO  songs have been loaded in 1216 ms
+INFO  63 games(collect) fetched
+INFO  games have been loaded in 1250 ms
+INFO  Generated: books/index.html
+INFO  Generated: movies/index.html
+INFO  Generated: games/index.html
+INFO  Generated: songs/index.html
 ```
 
 如果不加参数，那么默认参数为`-bgms`。当然，前提是配置文件中均有这些类型的配置。
