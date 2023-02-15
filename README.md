@@ -224,6 +224,10 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 
 系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。如果你觉得这个插件很好用，欢迎右上角点下小✨～
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mythsman/hexo-douban&type=Timeline)](https://star-history.com/#mythsman/hexo-douban&Timeline)
+
 ## Lisense
 
 MIT
