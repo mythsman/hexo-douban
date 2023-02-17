@@ -145,30 +145,6 @@ menu:
   Songs: /songs   #This is your songs page
 ```
 
-## 截图
-
-我们在下面这些常见的主题里测试了插件的使用效果:
-
-### hexo-theme-landscape
-
-![landscape](screenshot/landscape.png)
-
-### hexo-theme-next
-
-![next](screenshot/next.png)
-
-### hexo-theme-yilia
-
-![yilia](screenshot/yilia.png)
-
-### hexo-theme-indigo
-
-![indigo](screenshot/indigo.png)
-
-### hexo-theme-aath
-
-![aath](screenshot/aath.png)
-
 ## 接口
 
 如果有非hexo环境的部署需求（例如我自己就是用的 Ghost
@@ -213,6 +189,62 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=do
 
 https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 ```
+
+## 他们在用
+
+下面列举了在不同 hexo 主题下使用插件后的渲染结果，仅供参考。
+
+如果您使用了本插件，也欢迎在 README.md 中提 PR 将您的网站添加进来，供后人参考。
+
+### [hexo-theme-butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
+
+* [七鳄の学习格 - 生在黑暗，行向光明ヾ(@^▽^@)ノ](https://blog.gmcj0816.top/books/)
+* [Ofra Serendipity](https://cmwlvip.github.io/movies/)
+* [冰糖盒子 - 冰糖的笔记本](https://cvki.cn/movies/)
+* [フサエ·キャンベル·木之下 - 天道酬勤功不唐捐](https://zipblog.top/movies/)
+* [个人生活感悟记录](https://www.ensoul.club/books/)
+* [week.wiki](https://week.wiki/movies/)
+* [CodeRain - 越努力，越幸运](https://code7rain.github.io/movies/)
+* [hangzl's Blog - 总之岁月漫长 然而值得等待](https://hangzl.xyz/movies/)
+* [Lmx0](https://www.lmx0.top/movies/)
+* [老胖叔 - JZ](https://laopangshu.top/movies/)
+* [来生拓己 オフィシャルサイト](https://kisugitakumi.net/movies/)
+* [果实o的博客 - 个人网站](https://www.shengshunyan.xyz/movies/)
+* [TFC的个人博客](https://iqdxa.github.io/movies/)
+* [吕小布の博客 - MindCons](https://mindcons.cn/booklist/)
+* [Darler Space - 极速翱翔](https://blog.darler.cn/movies/)
+* [Evergarden](https://evergarden.moe/books/)
+* [现实的延续](https://www.intelland.cn/movies/)
+
+### [hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)
+
+* [小法进阶](https://imouyang.com/books/)
+* [Peiqi Blog](https://jupeiqi.top/books/)
+
+### [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
+
+* [Lyz's Blog - Never Give Up](https://blog.home999.cc/books)
+
+### [hexo-theme-stellar](https://github.com/xaoxuu/hexo-theme-stellar)
+
+* [是非题](https://www.shifeiti.com/about/movies/)
+* [MerryJingle](https://blog.pengfeima.cn/movies/)
+
+### [hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis)
+
+* [老梁有墨](https://www.laoliang.ink/book/)
+
+### [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure)
+
+* [fyupeng](https://lhx.cool/movies/)
+
+### [hexo-theme-icarus](https://github.com/ppoffice/hexo-theme-icarus)
+
+* [There Hello](https://therehello.top/movies/)
+
+### [hexo-theme-fluid](https://github.com/fluid-dev/hexo-theme-fluid)
+
+* [Loststar's blog](https://blog.loststar.tech/movies)
 
 ## 免责声明
 
