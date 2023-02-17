@@ -148,7 +148,8 @@ menu:
 ## 接口
 
 如果有非hexo环境的部署需求（例如我自己就是用的 Ghost
-，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [mouban](https://github.com/mythsman/mouban)：
+，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [
+](https://github.com/mythsman/mouban)：
 
 ```
 # 将 {your_douban_id} 改为你的豆瓣数字ID
@@ -254,7 +255,15 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 
 ## 反馈
 
-系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。如果你觉得这个插件很好用，欢迎右上角点下小✨～
+系统刚上线，可能还不够完善。如果大家在使用的过程中数据有问题、或者有什么问题和意见，欢迎随时提issue。
+
+如果你觉得这个插件很好用，欢迎右上角点下 star ⭐️，表达对作者的鼓励。
+
+如果你想了解数据获的实现方式，可以参考 [mouban](https://github.com/mythsman/mouban) 这个项目。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mythsman/hexo-douban&type=Timeline)](https://star-history.com/#mythsman/hexo-douban&Timeline)
 
 ## Lisense
 
