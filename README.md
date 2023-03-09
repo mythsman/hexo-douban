@@ -28,6 +28,7 @@ douban:
   id: 162448367
   builtin: false
   item_per_page: 10
+  meta_max_line: 4
   book:
     path: books/index.html
     title: 'This is my book title'
@@ -54,6 +55,7 @@ douban:
 - **id**: 你的豆瓣ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
 - **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。当你的豆瓣条目较多时，也建议关闭。
 - **item_per_page**: 每页展示的条目数，默认 10 。
+- **meta_max_line**: 每个条目展示的详细信息的最大行数，超过该行数则会以 "..." 省略，默认 4 。
 - **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持html语法。
