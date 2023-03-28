@@ -67,6 +67,7 @@ douban:
 ## 使用
 
 **展示帮助文档**
+
 ```
 $ hexo douban -h
 Usage: hexo douban
@@ -82,6 +83,7 @@ Options:
 ```
 
 **主动生成豆瓣页面**
+
 ```
 $ hexo douban
 INFO  Start processing
@@ -145,11 +147,13 @@ menu:
   Songs: /songs   #This is your songs page
 ```
 
+## 通用环境
+
+如果有非 hexo 环境的部署需求，则可以考虑以引入静态资源的方式接入 [idouban](https://github.com/mythsman/idouban) 。
+
 ## 接口
 
-如果有非hexo环境的部署需求（例如我自己就是用的 Ghost
-，简单效果页:[豆瓣](https://blog.mythsman.com/douban)），或者仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [
-](https://github.com/mythsman/mouban)：
+如果仅仅想对自己的豆瓣数据进行备份，可以尝试使用下面的接口，复用后端维护的数据提取服务 [mouban](https://github.com/mythsman/mouban) ：
 
 ```
 # 将 {your_douban_id} 改为你的豆瓣数字ID
