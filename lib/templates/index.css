@@ -45,7 +45,7 @@
     font-size: 12px;
     padding-right: 10px;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: <%= meta_max_line %>;
+    -webkit-line-clamp: 4;
 }
 
 .hexo-douban-comments {
