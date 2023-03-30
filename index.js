@@ -20,7 +20,8 @@ supported_types.forEach(supported_type => {
         if (!this.config.douban[supported_type].path) {
             this.config.douban[supported_type].path = `${supported_type}s/index.html`
         }
-        return require(`./lib/${supported_type}s-generator`).call(this, locals);
+        locals.douban_type = supported_type
+        return require(`./lib/generator`).call(this, locals);
     });
 })
 
@@ -88,7 +89,10 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         }
         self.config.douban[enabled_type].path = page_path
 
-        hexo.extend.generator.register(enabled_type, require(`./lib/${enabled_type}s-generator`));
+        hexo.extend.generator.register(enabled_type, function (locals) {
+            locals.douban_type = enabled_type
+            return require(`./lib/generator`).call(this, locals)
+        });
     })
 
 
