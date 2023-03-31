@@ -28,6 +28,7 @@ douban:
   builtin: false
   item_per_page: 10
   meta_max_line: 4
+  customize_layout: post
   book:
     path: books/index.html
     title: 'This is my book title'
@@ -60,9 +61,17 @@ douban:
 - **quote**: 写在页面开头的一段话,支持html语法。
 - **option**: 该页面额外的 Front-matter 配置，参考[Hexo 文档](https://hexo.io/docs/front-matter.html)。无特别需要，留空即可。
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
+- **customize_layout**: 自定义布局文件，默认值为post，即使用//theme/hexo-theme/layout/post.ejs
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 
+customize_layout参数适用于GitHub action等自动部署方式下不便于修改本插件渲染douban页面布局文件的情况。
+
+  参数使用示例：
+  ~~~
+  customize_layout: douban # 指定//theme/hexo-theme/layout/douban.ejs文件渲染douban页面
+  ~~~
+      
 ## 使用
 
 **展示帮助文档**
