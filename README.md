@@ -86,22 +86,10 @@ Options:
 ```
 $ hexo douban
 INFO  Start processing
-INFO  7 movies(wish) fetched
-INFO  0 movies(do) fetched
-INFO  11 games(wish) fetched
-INFO  0 books(wish) fetched
-INFO  0 songs(wish) fetched
-INFO  3 games(do) fetched
-INFO  0 books(do) fetched
-INFO  0 songs(do) fetched
-INFO  0 books(collect) fetched
-INFO  books have been loaded in 1172 ms
-INFO  147 movies(collect) fetched
-INFO  movies have been loaded in 1189 ms
-INFO  0 songs(collect) fetched
-INFO  songs have been loaded in 1216 ms
-INFO  63 games(collect) fetched
-INFO  games have been loaded in 1250 ms
+INFO  0 (wish), 0 (do),0 (collect) game loaded in 729 ms
+INFO  0 (wish), 0 (do),20 (collect) song loaded in 761 ms
+INFO  2 (wish), 0 (do),136 (collect) book loaded in 940 ms
+INFO  30 (wish), 0 (do),6105 (collect) movie loaded in 4129 ms
 INFO  Generated: books/index.html
 INFO  Generated: movies/index.html
 INFO  Generated: games/index.html
