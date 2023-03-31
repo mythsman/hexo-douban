@@ -9,7 +9,7 @@
     text-decoration: none !important;
 }
 
-.hexo-douban-active {
+.hexo-douban-tab-active {
     background: #657b83;
     color: #fff !important;
 }
@@ -43,9 +43,19 @@
     overflow: hidden;
     display: -webkit-box;
     font-size: 12px;
+    line-height: 16px;
     padding-right: 10px;
+    margin-top: 5px;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4
+}
+
+.hexo-douban-rating {
+    overflow: hidden;
+    display: -webkit-box;
+    font-size: 12px;
+    padding-right: 10px;
+    margin-top: 8px;
 }
 
 .hexo-douban-comments {
@@ -68,12 +78,3 @@
     color: #fff !important;
     opacity: 1;
 }
-
-.hexo-douban-hide {
-    display: none;
-}
-
-.hexo-douban-show {
-    display: block;
-}
-
