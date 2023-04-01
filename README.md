@@ -61,7 +61,7 @@ douban:
 - **quote**: 写在页面开头的一段话,支持html语法。
 - **option**: 该页面额外的 Front-matter 配置，参考[Hexo 文档](https://hexo.io/docs/front-matter.html)。无特别需要，留空即可。
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
-- **customize_layout**: 自定义布局文件，默认值为post，即使用//theme/hexo-theme/layout/post.ejs
+- **customize_layout**: 自定义布局文件。默认值为page，post,若//theme/hexo-theme/layout/page.ejs不存在则使用post.ejs
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 
