@@ -230,6 +230,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 
 * [是非题](https://www.shifeiti.com/about/movies/)
 * [MerryJingle](https://blog.pengfeima.cn/movies/)
+* [梅园小径](https://www.auntyang.cf/life/doubanmovies/)
 
 ### [hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis)
 
