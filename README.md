@@ -258,7 +258,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mythsman/hexo-douban&type=Timeline)](https://star-history.com/#mythsman/hexo-douban&Timeline)
+[![Stargazers over time](https://starchart.cc/mythsman/hexo-douban.svg)](https://starchart.cc/mythsman/hexo-douban)
 
 ## Lisense
 
