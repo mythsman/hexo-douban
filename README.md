@@ -211,6 +211,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 * [Darler Space - 极速翱翔](https://blog.darler.cn/movies/)
 * [Evergarden](https://evergarden.moe/books/)
 * [现实的延续](https://www.intelland.cn/movies/)
+* [Gallifrey的计算机学习日记 - 个人文章归档](https://gallifrey.asia/)
 
 ### [hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)
 
