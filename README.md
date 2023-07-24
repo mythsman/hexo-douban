@@ -221,6 +221,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 ### [hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
 
 * [Lyz's Blog - Never Give Up](https://blog.home999.cc/books)
+* [Sitch's Blog](https://sitchzou.com/movies/)
 
 ### [hexo-theme-stellar](https://github.com/xaoxuu/hexo-theme-stellar)
 
