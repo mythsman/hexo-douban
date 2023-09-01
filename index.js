@@ -103,10 +103,11 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
             const id = self.config.douban[enabled_type].path
             fs.mkdirSync(path.join(publicDir, id.replace("index.html", "")), {recursive: true})
 
-            self.route.get(id) && self.route.get(id)._data().then(function (contents) {
-                fs.writeFile(path.join(publicDir, id), contents);
+            let stream = self.route.get(id)
+            if (stream) {
+                self.route.get(id).pipe(fs.createWriteStream(path.join(publicDir, id)));
                 log.info("Generated: %s", id);
-            });
+            }
         });
     });
 });
