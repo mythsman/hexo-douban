@@ -1,5 +1,5 @@
 {
-  "name": "hexo-douban",
+  "name": "hexo-douban-eammo",
   "version": "2.2.3",
   "description": "Generate douban pages of books , movies and games for Hexo.",
   "main": "index",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mythsman/hexo-douban.git"
+    "url": "https://github.com/FAIING/hexo-douban-eamo.git"
   },
   "keywords": [
     "generator",
@@ -32,7 +32,7 @@
     "eslint-config-hexo": "^1.0.2"
   },
   "bugs": {
-    "url": "https://github.com/mythsman/hexo-douban/issues"
+    "url": "https://github.com/FAIING/hexo-douban-eamo/issues"
   },
-  "homepage": "https://github.com/mythsman/hexo-douban/"
+  "homepage": "https://github.com/FAIING/hexo-douban-eamo/"
 }
