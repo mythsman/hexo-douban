@@ -8,6 +8,16 @@
 
 [![NPM](https://nodei.co/npm/hexo-douban.png)](https://nodei.co/npm/hexo-douban/)
 
+# 说明
+本插件是在[mythsman](https://github.com/mythsman/hexo-douban)基础上进行的魔改，就是为了样式好看，当然魔改的插件目前只针对[Anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)主题有效，其他主题未知！！！
+
+修改本插件的思路来源于[满心记](https://blog.lovelu.top/movies/#)博客的影视页面推荐，因为考虑到豆瓣书影音可以通过该插件自动获取，所以想着将自动内容的页面样式进行修改，所以有了此次的魔改，只是觉得好看。
+
+本次的改动只是针对样式，其他核心内容并没有修改，所以很简单，如果有能力可以自己优化。
+
+插件版权归原作者所有，这里的魔改只是为了学习。
+
+
 ## 原理
 
 hexo-douban 目前升级到了 2.x 版本，将原先由插件客户端自行获取数据的逻辑抽到了一个隐藏的服务端中进行，以统一解决数据获取、数据缓存、风控对抗等问题，提高页面生成的成功率和效率。
@@ -32,22 +42,22 @@ douban:
   book:
     path: books/index.html
     title: 'This is my book title'
-    quote: 'This is my book quote'
+    quote: 'This is my book quote，<color>这里可以加内容，也可以不使用</color>'
     option:
   movie:
     path: movies/index.html
     title: 'This is my movie title'
-    quote: 'This is my movie quote'
+    quote: 'This is my movie quote，<color>这里可以加内容，也可以不使用</color>'
     option:
   game:
     path: games/index.html
     title: 'This is my game title'
-    quote: 'This is my game quote'
+    quote: 'This is my game quote，<color>这里可以加内容，也可以不使用</color>'
     option:
   song:
     path: songs/index.html
     title: 'This is my song title'
-    quote: 'This is my song quote'
+    quote: 'This is my song quote，<color>这里可以加内容，也可以不使用</color>'
     option:
   timeout: 10000 
 ```
@@ -62,6 +72,7 @@ douban:
 - **quote**: 写在页面开头的一段话,支持html语法。
 - **timeout**: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
 - **option**: 该页面额外的 Front-matter 配置，参考[Hexo 文档](https://hexo.io/docs/front-matter.html)。无特别需要，留空即可。
+- - **color**: color里面的内容可以自定义，如果觉得不需要，可以直接把<color>xxx</color>删除即可。
 
 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 
