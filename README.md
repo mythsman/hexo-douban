@@ -30,7 +30,7 @@ hexo-douban 目前升级到了 2.x 版本，将原先由插件客户端自行获
 ## 安装
 
 ``` bash
-$ npm install hexo-douban --save
+$ npm install hexo-douban-eamo --save
 ```
 
 ## 配置
