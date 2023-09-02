@@ -2,6 +2,11 @@
 
 一个在 [Hexo](https://hexo.io) 页面中嵌入豆瓣个人主页的小插件.
 
+
+[![mouban status](https://uptime.mythsman.com/api/badge/9/uptime?labelPrefix=Mouban+)](https://uptime.mythsman.com/status/douban)
+[![minio status](https://uptime.mythsman.com/api/badge/19/uptime?labelPrefix=Minio+)](https://uptime.mythsman.com/status/douban)
+
+
 [![package version](https://badge.fury.io/js/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![npm](https://img.shields.io/npm/dt/hexo-douban.svg)](https://www.npmjs.com/package/hexo-douban)
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
