@@ -78,3 +78,219 @@
     color: #fff !important;
     opacity: 1;
 }
+
+/* 魔改 */
+#hexo-douban-item3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hexo-douban-item {
+    border-bottom: none !important;
+    background: var(--anzhiyu-card-bg);
+    border: var(--style-border);
+    box-shadow: var(--anzhiyu-shadow-border);
+    border-radius: 12px;
+    margin: 8px 0;
+    height: 160px;
+    min-height: 160px !important;
+    width: 49%;
+    overflow: hidden;
+}
+@media screen and (min-width: 1300px){
+.hexo-douban-item {
+    width: 32%;
+}
+}
+@media screen and (max-width: 600px){
+.hexo-douban-item {
+    width: 100%;
+}
+}
+
+.hexo-douban-picture {
+    height: 100%;
+    top: 0 !important;
+    padding: 10px 0 10px 10px;
+}
+
+#article-container a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--anzhiyu-lighttext);
+    color: var(--anzhiyu-fontcolor);
+    font-weight: bold;
+    padding: 0 4px;
+    border-radius: 4px 4px 0 0;
+}
+
+#article-container a {
+    color: rgb(48, 122, 246);
+}
+
+.hexo-douban-item .hexo-douban-picture a {
+    padding: 0 !important;
+}
+
+a {
+    background-color: transparent;
+    color: var(--anzhiyu-fontcolor);
+    text-decoration: none;
+    transition: all .2s ease 0s;
+    overflow-wrap: break-word;
+    -webkit-user-drag: none;
+}
+
+#article-container img {
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+#article-container img {
+    display: block;
+    margin: 0px auto 0.8rem;
+}
+
+.hexo-douban-item .hexo-douban-picture img {
+    margin: 0px !important;
+    height: 100% !important;
+}
+
+.hexo-douban-picture a img {
+    border-radius: 8px !important;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.2s ease 0s;
+    border-style: none;
+}
+
+.hexo-douban-info {
+    padding-left: 130px !important;
+    margin-right: 0.5rem;
+    margin-top: 5px;
+}
+
+.hexo-douban-title {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.hexo-douban-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#article-container a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--anzhiyu-lighttext);
+    color: var(--anzhiyu-fontcolor);
+    font-weight: bold;
+    padding: 0 4px;
+    border-radius: 4px 4px 0 0;
+}
+
+#article-container a {
+    color: rgb(48, 122, 246);
+}
+
+.hexo-douban-title a {
+    padding: 0 !important;
+}
+
+.hexo-douban-title a {
+    border-bottom: 0px !important;
+}
+
+a {
+    background-color: transparent;
+    color: var(--anzhiyu-fontcolor);
+    text-decoration: none;
+    transition: all .2s ease 0s;
+    overflow-wrap: break-word;
+    -webkit-user-drag: none;
+}
+
+.hexo-douban-comments {
+    line-height: 1.2;
+    margin-top: 0.3rem;
+    font-size: 0.8rem !important;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.hexo-douban-meta {
+    font-size: 0.7rem !important;
+    color: var(--anzhiyu-secondtext);
+    margin-top: 0.3rem;
+    line-height: 1.05;
+}
+
+.author-content.author-content-item.doubanPage {
+    height: 23rem;
+    background: url(https://imgmars.yohobuy.com/yohomars/2019/11/29/16/28/010dee9888a857f4096d95f9b8238f337f.jpg?imageView/2/w/750/h/313) no-repeat top;
+    background-size: cover;
+    color: var(--anzhiyu-white);
+    overflow: hidden;
+    margin-top: 0;
+} 
+.author-content.author-content-item.doubanPage.single::after {
+    box-shadow: 0 21px 133px 81px #1c1c1c inset;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#aside-content {
+    display: none;
+}
+@media screen and (min-width: 1200px){
+#aside-content {
+    display: none;
+}
+}
+#page h1.page-title {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+#body-wrap .layout #page {
+    padding: 20px 15px !important;
+}
+}
+
+div#page {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    width: 100%;
+}
+
+[data-theme="dark"] div#page {
+    background: var(--anzhiyu-card-bg);
+}
+
+
+#article-container .author-content-item.doubanPage.single .banner-button-group .banner-button{
+    border-radius: 25px;
+}
+
+color {
+    background-image: linear-gradient(to left, #ff4500, orange, gold, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: rainbow 5s linear infinite;
+}
