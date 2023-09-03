@@ -132,9 +132,9 @@ INFO  Generated: songs/index.html
 我会不定期更新一些功能或者修改一些Bug，所以如果想使用最新的特性，可以用下面的方法来更新:
 
 1. 修改 package.json 内 hexo-douban 的版本号至最新
-2. 重新安装最新版本`npm install hexo-douban --save`
+2. 重新安装最新版本`npm install hexo-douban-eamo --save`
 
-或者使用`npm install hexo-douban --update --save`直接更新。
+或者使用`npm install hexo-douban-eamo --update --save`直接更新。
 
 ## 显示
 
