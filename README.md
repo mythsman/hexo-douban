@@ -58,7 +58,7 @@ douban:
 ```
 
 - **id**: 你的豆瓣ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
-- **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。当你的豆瓣条目较多时，也建议关闭。
+- **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。
 - **item_per_page**: 每页展示的条目数，默认 10 。
 - **meta_max_line**: 每个条目展示的详细信息的最大行数，超过该行数则会以 "..." 省略，默认 4 。
 - **customize_layout**: 自定义布局文件。默认值为 page 。无特别需要，留空即可。若配置为 `abcd`，则表示指定 `//theme/hexo-theme/layout/abcd.ejs` 文件渲染豆瓣页面。
@@ -105,8 +105,18 @@ INFO  Generated: songs/index.html
 
 如果不加参数，那么默认参数为`-bgms`。当然，前提是配置文件中均有这些类型的配置。
 
-**需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy`
-的前缀都是`hexo d`。
+**需要注意的是**，通常大家都喜欢用`hexo d`来作为`hexo deploy`命令的简化，但是当安装了`hexo douban`之后，就不能用`hexo d`了，因为`hexo douban`跟`hexo deploy` 的前缀都是`hexo d`。
+
+如果 builtin:false 时，执行 hexo g 之后发现将 douban 生成的页面删除了:
+```
+INFO  Start processing
+INFO  Files loaded in 343 ms
+INFO  Deleted: games/index.html
+INFO  Deleted: books/index.html
+INFO  Deleted: movies/index.html
+INFO  Deleted: songs/index.html
+```
+那么重新执行 hexo clean 一下即可（原因是 db.json 的数据缓存）。
 
 第一次使用 hexo douban 时，后台会异步进行数据获取，一般需要等待一段时间（后台访问你的标记页面）才能查到数据。顺利情况下，平均一个页面会花10s。
 
