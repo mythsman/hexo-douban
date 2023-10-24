@@ -28,7 +28,7 @@
   "author": "mythsman",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^8.52.0",
     "eslint-config-hexo": "^1.0.2"
   },
   "bugs": {
