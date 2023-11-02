@@ -16,8 +16,8 @@ supported_types.forEach(supported_type => {
             this.config.douban[supported_type].path = `${supported_type}s/index.html`
         }
 
-        if (this.config.douban[type].path.startsWith("/")) {
-            this.config.douban[type].path = this.config.douban[type].path.substr(1)
+        if (this.config.douban[supported_type].path.startsWith("/")) {
+            this.config.douban[supported_type].path = this.config.douban[type].path.substr(1)
         }
 
         locals.douban_type = supported_type
