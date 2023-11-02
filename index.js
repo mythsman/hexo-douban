@@ -80,6 +80,11 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
         if (this.config.douban[type].path.startsWith("/")) {
             this.config.douban[type].path = this.config.douban[type].path.substr(1)
         }
+
+        hexo.extend.generator.register(type, function (locals) {
+            locals.douban_type = type
+            return require(`./lib/generator`).call(this, locals)
+        });
     })
 
     const self = this;
