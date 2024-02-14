@@ -259,6 +259,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 ### [hexo-theme-fluid](https://github.com/fluid-dev/hexo-theme-fluid)
 
 * [Loststar's blog](https://blog.loststar.tech/movies)
+* [MerickBaoの博客](https://merickbao.github.io/movies/)
 
 ## 免责声明
 
