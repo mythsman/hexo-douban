@@ -90,7 +90,7 @@ douban:
 
 - **id**: 你的豆瓣 ID(纯数字格式，不是自定义的域名)。获取方法可以参考[怎样获取豆瓣的数字 ID ？](https://www.zhihu.com/question/19634899)
 - **builtin**: 是否将`hexo douban`命令默认嵌入进`hexo g`、`hexo s`，使其自动执行`hexo douban` 命令。默认关闭。
-- **dynamic**: 豆瓣页面是否在访问时实时请求接口。默认为 false，表示页面信息会在执行 hexo douban 命令时更新，优点是生成的页面不会受到后续接口可用性的影响，确定是需要手动更新。如果设置为 true ，则会在页面访问时实时调用接口进行渲染，无需执行 hexo douban 命令更新页面，但是代价就是如果接口挂了，页面就会寄。
+- **dynamic**: 豆瓣页面是否在访问时实时请求接口。默认为 false，表示页面信息会在执行 hexo douban 命令时更新，优点是生成的页面不会受到后续接口可用性的影响，缺点是需要手动更新。如果设置为 true ，则会在页面访问时实时调用接口进行渲染，无需执行 hexo douban 命令更新页面，但是代价就是如果接口挂了，页面就会G。
 - **item_per_page**: 每页展示的条目数，默认 10 。
 - **meta_max_line**: 每个条目展示的详细信息的最大行数，超过该行数则会以 "..." 省略，默认 4 。
 - **customize_layout**: 自定义布局文件。默认值为 page 。无特别需要，留空即可。若配置为 `abcd`，则表示指定 `//theme/hexo-theme/layout/abcd.ejs` 文件渲染豆瓣页面。
@@ -281,6 +281,7 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 - [是非题](https://www.shifeiti.com/about/movies/)
 - [MerryJingle](https://blog.pengfeima.cn/movies/)
 - [梅园小径](https://www.auntyang.cf/life/doubanmovies/)
+- [苏末了](https://sumorio.com/douban/movie/)
 
 ### [hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis)
 
