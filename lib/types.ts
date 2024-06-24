@@ -13,6 +13,7 @@ export interface DoubanConfig {
   item_per_page: number;
   meta_max_line: number;
   customize_layout: string;
+  swup: boolean;
   book: TypeConfig;
   movie: TypeConfig;
   game: TypeConfig;

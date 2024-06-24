@@ -49,6 +49,7 @@ douban:
   item_per_page: 10
   meta_max_line: 4
   customize_layout: page
+  swup: false
   book:
     path: books/index.html
     title: "This is my book title"
@@ -93,6 +94,7 @@ douban:
 - **item_per_page**: 每页展示的条目数，默认 10 。
 - **meta_max_line**: 每个条目展示的详细信息的最大行数，超过该行数则会以 "..." 省略，默认 4 。
 - **customize_layout**: 自定义布局文件。默认值为 page 。无特别需要，留空即可。若配置为 `abcd`，则表示指定 `//theme/hexo-theme/layout/abcd.ejs` 文件渲染豆瓣页面。
+- **swup**: 是否兼容 [swup](https://swup.js.org/plugins/scripts-plugin/) 。支持 script 热加载，解决一些 single-page 主题的加载问题，默认 false 。
 - **path**: 生成页面后的路径，默认生成在 //yourblog/books/index.html 等下面。如需自定义路径，则可以修改这里。
 - **title**: 该页面的标题。
 - **quote**: 写在页面开头的一段话,支持 html 语法，可以为空。

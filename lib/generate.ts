@@ -6,10 +6,9 @@ import { createRequire } from "module";
 
 const template: string = `<div id="idouban"></div>
 <link rel="stylesheet" type="text/css" href="data:text/css;base64,{{style}}" />
-<script src="data:application/x-javascript;base64,{{script}}">
+<script {{swup}} src="data:application/x-javascript;base64,{{script}}">
 </script>
-<script src="data:application/x-javascript;base64,{{init}}">
- 
+<script {{swup}} src="data:application/x-javascript;base64,{{init}}">
 </script>
 `;
 
@@ -56,6 +55,7 @@ export async function generate(
   const style = readFileSync(
     createRequire(__dirname).resolve("idouban/dist/index.css")
   ) as string;
+  const swup = config.swup ? "data-swup-reload-script" : "";
 
   const init_config = {
     selector: "#idouban",
@@ -91,9 +91,10 @@ export async function generate(
   const init = `idouban.init(${JSON.stringify(init_config)})`;
 
   const dom = template
-    .replace("{{style}}", Buffer.from(style).toString("base64"))
-    .replace("{{script}}", Buffer.from(script).toString("base64"))
-    .replace("{{init}}", Buffer.from(init).toString("base64"));
+    .replace(/{{style}}/g, Buffer.from(style).toString("base64"))
+    .replace(/{{script}}/g, Buffer.from(script).toString("base64"))
+    .replace(/{{init}}/g, Buffer.from(init).toString("base64"))
+    .replace(/{{swup}}/g, swup);
 
   return {
     path: type_config.path,
