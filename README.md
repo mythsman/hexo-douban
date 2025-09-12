@@ -300,6 +300,11 @@ https://mouban.mythsman.com/guest/user_song?id={your_douban_id}&action=collect
 - [Loststar's blog](https://blog.loststar.tech/movies)
 - [MerickBao の博客](https://merickbao.github.io/movies/)
 
+### [hexo-theme-anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)
+
+- [Peter267](https://peter267.github.io/books/)
+
+
 ## 免责声明
 
 本项目仅供学习交流使用，不得用于任何商业用途。
